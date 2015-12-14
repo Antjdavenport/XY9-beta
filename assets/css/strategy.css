@@ -1,0 +1,271 @@
+#bgHero
+{
+	position: fixed;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	max-width: 2000px;
+	min-height: 700px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	margin-top:-62px;
+	background-position: center top;
+	background-image: url('../img/strategy/page_bg.jpg');
+	background-repeat: no-repeat; 
+	background-size: cover;
+}
+
+#content 
+{
+	padding-top: 150px;
+}
+
+#introBox
+{
+	position: relative;
+	width: 320px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+#introBox #pyramid
+{
+	position: absolute;
+	top: 0px;
+	right: -45px;
+	z-index: 3;
+}
+#introBox #pyramid img 
+{
+	width: 60px;
+}
+
+#introBox #top #flare
+{
+	position: absolute;
+	z-index: 10;
+	top: -85px;
+	right: -90px;
+	opacity: 0;
+}
+
+#introBox #top #flare img
+{
+	width: 90%
+}
+
+#introBox #top #frame
+{
+	display: block;
+	position: relative;
+	z-index: 1;
+	width: 100%;
+}
+
+#introBox #top #frameExtension
+{
+	display: none;
+}
+
+#introBox #header
+{
+	position: absolute;
+	z-index: 10;
+	top: 30px;
+	left: 5px;
+	width: 100%;
+	z-index: 10;
+	text-align: center;
+	font-family: "Alegreya Sans", sans-serif;
+	font-size: 19px;
+	line-height: 16px;
+	color: #ffffff;
+}
+
+#introBox #header .smaller
+{
+	font-size: 14px;
+	line-height: 16px;
+}
+
+#introBox #blinky 
+{
+	position: absolute;
+	width: 28px;
+	top: 22px;
+	left: 19px;
+	z-index: 15;
+}
+
+#introBox #blinky img 
+{
+	width: 100%;
+}
+
+#introBox #top #arm,
+#introBox #top #gear1,
+#introBox #top #gear2
+{
+	display: none;
+}
+
+#introBox #copy 
+{
+	position: relative;
+	z-index: 5;
+	margin-left: 19px;
+	color: #ffffff;
+	padding: 0px 20px;
+	box-shadow: 1px 1px 10px #f0cee2, -1px -1px 10px #f0cee2, 1px -1px 10px #f0cee2, -1px 1px 10px #f0cee2;
+	border: 2px solid #f0cee2;
+	background-image: url("../img/global/line_bg3.png");
+	background-repeat: repeat;
+	background-size: 3px 7px;
+	overflow: hidden;
+}
+
+#introBox #copy #lines
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background-image: url("../img/global/lines.png");
+	background-repeat: repeat-x;
+}
+
+#videoBox
+{
+	position: relative;
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	border: 1px solid transparent;
+}
+
+#videoBox #sideProjector 
+{
+	position: absolute;
+	width: 150px;
+	top: 0;
+	left: 0;
+} 
+
+#videoBox #sideProjector img
+{
+	width: 100%;
+}
+
+#videoBox #playerFrame
+{
+	width: 300px;
+	margin: 0 auto;
+	margin-top: 50px;
+	border:2px solid white;
+	box-shadow: 1px 1px 10px #f0cee2, -1px -1px 10px #f0cee2, 1px -1px 10px #f0cee2, -1px 1px 10px #f0cee2;
+}
+
+@media screen and (min-width: 600px){
+
+	#videoBox #sideProjector
+	{
+		display: none;
+	}
+
+	#videoBox #playerFrame
+	{
+		margin-top: 0;
+		width: 600px;
+		height: 380px;
+		padding: 50px 30px;
+		box-shadow: none;
+		border: none;
+		background-image: url("../img/strategy/player_frame.png");
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+
+	#videoBox .vidPlayer
+	{
+		width: 100%;
+		height: 100%;
+	}
+
+}
+
+@media screen and (min-width: 800px) {
+
+	#content
+	{
+		padding-top: 200px;
+	}
+
+	#introBox
+	{
+		margin-left: 200px;
+	}
+
+	#introBox #top #arm
+	{
+		display: block;
+		position: absolute;
+		width: 700px;
+		z-index: 0;
+		left: -675px;
+		top: 40px;
+	}
+
+	#introBox #top #gear1
+	{
+		display: block;
+		width: 35px;
+		top: 241px;
+		left: -165px;
+	}
+
+	#introBox #top #gear2
+	{
+		display: block;
+		width: 24px;
+		top: 308px;
+		left: -160px;
+	}
+
+	#introBox #top #arm img
+	{
+		width: 100%;
+	}
+
+	#introBox #top #frameExtension
+	{
+		display: block;
+		position: absolute;
+		width: 200px;
+		z-index: 15;
+		left: 300px;
+		top: 58px;
+	}
+
+	#introBox #copy
+	{
+		width: 480px;
+	}
+
+	#videoBox #playerFrame
+	{
+		width: 800px;
+		height: 507px;
+	}
+}
+
+
+@media screen and (min-width: 1000px) {
+
+	#videoBox #playerFrame
+	{
+		width: 1000px;
+		height: 634px;
+	}
+}

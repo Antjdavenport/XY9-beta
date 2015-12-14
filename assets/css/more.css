@@ -1,0 +1,796 @@
+#bgHero
+{
+	position: fixed;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	max-width: 2000px;
+	min-height: 700px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+
+#bgHero #hero
+{
+	position: absolute;
+	z-index: 0;
+	width: 100%;
+	min-width: 1000px;
+	max-width: 2000px;
+	margin: 0 auto;
+}
+
+#bgHero #hero2
+{
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	min-width: 1000px;
+	max-width: 2000px;
+	margin: 0 auto;
+}
+
+#bgHero #hero,
+#bgHero #hero2,
+#rock1,
+#rock2,
+#rock3,
+#rock4,
+#rock5
+{
+	right: -40%;
+}
+
+@keyframes rock1Anim
+{
+	0% { 
+		-ms-transform: rotate(-5deg) scale(1,1); /* IE 9 */
+	    -webkit-transform: rotate(-5deg) scale(1,1); /* Chrome, Safari, Opera */
+	    transform: rotate(-5deg) scale(1,1); }
+	50% { 
+		-ms-transform: rotate(10deg) scale(1.05,1.05); /* IE 9 */
+	    -webkit-transform: rotate(10deg) scale(1.05,1.05); /* Chrome, Safari, Opera */
+	    transform: rotate(10deg) scale(1.05,1.05); }
+	100% { 
+		-ms-transform: rotate(-5deg) scale(1,1); /* IE 9 */
+	    -webkit-transform: rotate(-5deg) scale(1,1); /* Chrome, Safari, Opera */
+	    transform: rotate(-5deg) scale(1,1); }
+}
+
+#rock1
+{
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	min-width: 1000px;
+	max-width: 2000px;
+	margin: 0 auto;
+	transform-origin: 35.75% 12.14%;
+	animation-name: rock1Anim;
+	animation-duration: 5s;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes rock2Anim
+{
+	0% { 
+		-ms-transform: rotate(5deg) scale(1,1); /* IE 9 */
+	    -webkit-transform: rotate(5deg) scale(1,1); /* Chrome, Safari, Opera */
+	    transform: rotate(5deg) scale(1,1); }
+	50% { 
+		-ms-transform: rotate(-10deg) scale(1.06,1.06); /* IE 9 */
+	    -webkit-transform: rotate(-10deg) scale(1.06,1.06); /* Chrome, Safari, Opera */
+	    transform: rotate(-10deg) scale(1.06,1.06); }
+	100% { 
+		-ms-transform: rotate(5deg) scale(1,1); /* IE 9 */
+	    -webkit-transform: rotate(5deg) scale(1,1); /* Chrome, Safari, Opera */
+	    transform: rotate(5deg) scale(1,1); }
+}
+
+#rock2
+{
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	min-width: 1000px;
+	max-width: 2000px;
+	margin: 0 auto;
+	transform: rotate(0deg); 
+	transform-origin: 78.55% 24.5%;
+	animation-name: rock2Anim;
+	animation-duration: 4s;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes rock3Anim
+{
+	0% { 
+		-ms-transform: rotate(8deg) scale(1,1); /* IE 9 */
+	    -webkit-transform: rotate(8deg) scale(1,1); /* Chrome, Safari, Opera */
+	    transform: rotate(8deg) scale(1,1); }
+	50% { 
+		-ms-transform: rotate(-12deg) scale(1.05,1.05); /* IE 9 */
+	    -webkit-transform: rotate(-12deg) scale(1.05,1.05); /* Chrome, Safari, Opera */
+	    transform: rotate(-12deg) scale(1.05,1.05); }
+	100% { 
+		-ms-transform: rotate(8deg) scale(1,1); /* IE 9 */
+	    -webkit-transform: rotate(8deg) scale(1,1); /* Chrome, Safari, Opera */
+	    transform: rotate(8deg) scale(1,1); }
+}
+
+#rock3
+{
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	min-width: 1000px;
+	max-width: 2000px;
+	margin: 0 auto;
+	transform: rotate(0deg); 
+	transform-origin: 30.1% 7.64%;
+	animation-name: rock3Anim;
+	animation-duration: 4s;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes rock4Anim
+{
+	0% { 
+		-ms-transform: rotate(0deg); /* IE 9 */
+	    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+	    transform: rotate(0deg); }
+	50% { 
+		-ms-transform: rotate(-24deg); /* IE 9 */
+	    -webkit-transform: rotate(-24deg); /* Chrome, Safari, Opera */
+	    transform: rotate(-24deg); }
+	100% { 
+		-ms-transform: rotate(0deg); /* IE 9 */
+	    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+	    transform: rotate(0deg); }
+}
+
+#rock4
+{
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	min-width: 1000px;
+	max-width: 2000px;
+	margin: 0 auto;
+	transform: rotate(0deg); 
+	transform-origin: 44.6% 27.81%;
+	animation-name: rock4Anim;
+	animation-duration: 3s;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes rock5Anim
+{
+	0% { 
+		-ms-transform: rotate(0deg) scale(1,1); /* IE 9 */
+	    -webkit-transform: rotate(0deg) scale(1,1); /* Chrome, Safari, Opera */
+	    transform: rotate(0deg) scale(1,1); }
+	50% { 
+		-ms-transform: rotate(-24deg) scale(1.05,1.05); /* IE 9 */
+	    -webkit-transform: rotate(-24deg) scale(1.05,1.05); /* Chrome, Safari, Opera */
+	    transform: rotate(-24deg) scale(1.05,1.05); }
+	100% { 
+		-ms-transform: rotate(0deg) scale(1,1); /* IE 9 */
+	    -webkit-transform: rotate(0deg) scale(1,1); /* Chrome, Safari, Opera */
+	    transform: rotate(0deg) scale(1,1); }
+}
+
+#rock5
+{
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	min-width: 1000px;
+	max-width: 2000px;
+	margin: 0 auto;
+	transform: rotate(0deg); 
+	transform-origin: 25.75% 15.24%;
+	animation-name: rock5Anim;
+	animation-duration: 6s;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+}
+
+
+#NewRock1, #NewRock2,  #NewRock3,  #NewRock4, #NewRock5, #bolt1, #bolt2, #bolt3, #smallbolt, #smallbolt2  
+
+{
+
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+	width: 100%;
+	right: -20%;
+	min-width: 1000px;
+	max-width: 2000px;
+	margin: 0 auto;
+
+}
+
+#NewRock2  {
+
+	right: 0%;
+}
+
+#bolt {
+
+position: absolute;
+	z-index: 2;
+	opacity: 0;
+	width: 100%;
+	border: solid 2px red;
+	right: 	0%;
+	min-width: 1000px;
+	max-width: 2000px;
+	margin: 0 auto;
+	animation-name: bolt1;
+	animation-duration: 5s;
+	animation-delay: 3s;
+	animation-iteration-count: 100;
+
+}
+
+@keyframes bolt1 {
+
+2.5%{
+
+opacity: 0.7;
+
+}
+
+7%{
+
+opacity: 0;
+
+}
+
+7.5%{
+
+
+
+
+}
+
+}
+
+
+
+#bolt2 {
+
+	opacity: 0;
+	animation-name: bolt2;
+	animation-duration: 5s;
+	animation-delay: 3s;
+	animation-iteration-count: 100;
+
+
+}
+
+@keyframes bolt2 {
+
+
+
+2.5%{
+
+opacity: 0;
+
+}
+
+5%{
+
+opacity: 0.7;
+
+}
+
+9.5%{
+
+opacity: 0;
+
+}
+
+}
+
+
+
+#bolt3 {
+
+	opacity: 0;
+	animation-name: bolt3;
+	animation-duration: 5s;
+	animation-delay: 3s;
+	animation-iteration-count: 100;
+
+
+}
+
+@keyframes bolt3 {
+
+5%{
+
+opacity: 0;
+
+}
+
+7.5%{
+
+opacity: 0.7;
+
+}
+
+12%{
+
+opacity: 0;
+
+}
+
+}
+
+#smallbolt {
+
+	opacity: 0;
+	animation-name: smallbolt;
+	animation-duration: 6s;
+	animation-delay: 3s;
+	animation-iteration-count: 100;
+
+
+}
+
+@keyframes smallbolt {
+
+5%{
+
+opacity: 0;
+
+}
+
+7.5%{
+
+opacity: 0.7;
+
+}
+
+10%{
+
+opacity: 0;
+
+}
+
+}
+
+#smallbolt2{
+
+	opacity: 0;
+	animation-name: smallbolt2;
+	animation-duration: 6s;
+	animation-delay: 3.1s;
+	animation-iteration-count: 100;
+
+
+}
+
+@keyframes smallbolt2 {
+
+
+5%{
+
+opacity: 0;
+
+}
+
+7.5%{
+
+opacity: 0.7;
+
+}
+
+10%{
+
+opacity: 0;
+
+
+}
+
+}
+
+
+
+
+
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* CONTENT */
+
+#content 
+{
+	margin-top: 300px;
+}
+
+#tcgBox 
+{
+	position: relative;
+	width: 320px;
+	margin: 0 auto;
+}
+
+
+#tcgBox #bottom #smFrameBottom,
+#tcgBox #top #frame
+{
+	display: block;
+	width: 100%;
+}
+
+#tcgBox #lgFrameBottom
+{
+	display: none;
+}
+
+#tcgBox #top #frame 
+{
+	display: block;
+}
+
+#tcgBox #top #arm,
+#tcgBox #top #gear1,
+#tcgBox #top #gear2
+{
+	display: none;
+}
+
+#tcgBox #top #flare
+{
+	position: absolute;
+	z-index: 10;
+	top: -59px;
+	left: 22px;
+	opacity: 0;
+}
+
+#tcgBox #top #flare img
+{
+	width: 90%
+}
+
+#tcgBox #top2 
+{
+	display: none;
+}
+
+#tcgBox #header
+{
+	position: absolute;
+	top: 30px;
+	width: 100%;
+	z-index: 10;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Alegreya Sans", sans-serif;
+	font-size: 16px;
+	line-height: 16px;
+	color: #ffffff;
+}
+
+#tcgBox #blinky 
+{
+	position: absolute;
+	width: 28px;
+	top: 22px;
+	left: 19px;
+}
+
+#tcgBox #blinky img 
+{
+	width: 100%;
+}
+
+#tcgBox #copy 
+{
+	padding: 5% 8% 1% 8%;
+	background-image: url('../img/global/textFrame_mid.png');
+	background-repeat: repeat-y;
+	background-size: 100% 1px;
+}
+
+#downloadBox
+{
+	position: relative;
+	width: 320px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	height: 129px;
+	margin-bottom: 10px;
+	padding: 25px;
+	background-image: url('../img/global/line_bg.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	cursor: pointer;
+}
+
+#downloadBox div 
+{
+	position: absolute;
+	color: #ffffff;
+	font-family: "Alegreya Sans", sans-serif;
+}
+
+#downloadBox #pyramid
+{
+	position: absolute;
+	top: -10px;
+	left: 50px;
+	z-index: 5;
+}
+#downloadBox #pyramid img 
+{
+	width: 50px;
+}
+
+#downloadBox #info 
+{
+	width: 150px;
+	font-size: 15px;
+	padding-top: 14px;
+}
+
+#downloadBox #arrow 
+{
+	width: 96px;
+	left: 150px;
+	top: 20px;
+}
+
+#downloadBox #arrow img 
+{
+	width: 100%;
+}
+
+#downloadBox #cta
+{
+	right: 22px;
+	top: 44px;
+}
+
+#downloadBox #cta #line1 
+{
+	font-size: 14px;
+}
+
+#downloadBox #cta #line2 
+{
+	font-size: 32px;
+	line-height: 32px;
+}
+
+
+
+
+@media screen and (min-width: 550px) {
+	#bgHero #hero,
+	#bgHero #hero2,
+	#rock1,
+	#rock2,
+	#rock3,
+	#rock4,
+	#rock5
+	{
+		right: -20%;
+	}
+
+
+
+}
+
+
+@media screen and (min-width: 850px) {
+
+	#NewRock1, #NewRock2,  #NewRock3,  #NewRock4, #NewRock5, #bolt1, #bolt2, #bolt3, #smallbolt, #smallbolt2  
+
+{
+
+	right: 0%;
+
+}
+
+
+
+
+	#bgHero #hero,
+	#bgHero #hero2,
+	#rock1,
+	#rock2,
+	#rock3,
+	#rock4,
+	#rock5
+	{
+		right: 0;
+	}	
+
+	#content 
+	{
+		margin-top: 380px;
+	}
+
+	#tcgBox 
+	{
+		width: 400px;
+		left: -200px;
+		margin-bottom: 30px;
+	}
+
+	#tcgBox #top,
+	#tcgBox #copy
+	{
+		position: relative;
+	}
+
+	#tcgBox #copy
+	{
+		z-index: 1;
+		left: 40px;
+	}
+
+	#tcgBox #copy #floatingDownloadBoxSpace
+	{
+		float: right;
+		position: relative;
+		width: 40px;
+		height: 140px;
+		top: 25px;
+	}
+
+	#tcgBox #top #frame,
+	#tcgBox #top #blinky
+	{
+		display: none;
+	}
+
+	#tcgBox #top #arm
+	{
+		display: block;
+		position: absolute;
+		z-index: 0;
+		width: 1400px;
+		left: -1000px;
+		top: -80px;
+	}
+
+	#tcgBox #top #gear1
+	{
+		display: block;
+		width: 14px;
+		top: 28px;
+		left: 10px;
+	}
+
+	#tcgBox #top #gear2
+	{
+		display: block;
+		width: 19px;
+		top: 196px;
+		left: -83px;
+	}
+
+	#tcgBox #top #header
+	{
+		top: -45px;
+		font-size: 18px;
+	}
+	#tcgBox #top #flare
+	{
+		top: -190px;
+		left: -120px;
+	}
+
+	#tcgBox #top2 
+	{
+		display: block;
+		position: relative;
+		width: 400px;
+		left: 40px;
+		top: 20px;
+	}
+
+	#tcgBox #top2 img 
+	{
+		width: 100%;
+	}
+
+	#tcgBox #top2 #beam
+	{
+		position: absolute;
+		z-index: 10;
+		right: -104px;
+		top: -60px;
+		width: 225px; 
+	}
+
+	#tcgBox #copy 
+	{
+		padding: 0% 8% 1% 8%;
+		background-image: url('../img/global/textFrame2_mid.png');
+		background-repeat: repeat-y;
+		background-size: 100% 1px;
+	}
+
+	#tcgBox #bottom
+	{
+		position: relative;
+		left: 40px;
+	}
+
+	#tcgBox #bottom #smFrameBottom
+	{
+		display: none;
+	}
+
+	#tcgBox #bottom #lgFrameBottom
+	{
+		display: block;
+		width: 400px;
+	}
+
+	#downloadBox 
+	{
+		position: absolute;
+		z-index: 10;
+		left: 360px;
+		top: 90px;
+		width: 450px;
+		background-image: url('../img/global/line_bg2.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+
+	#downloadBox #info 
+	{
+		width: 220px;
+		font-size: 18px;
+		padding-top: 9px;
+		padding-left: 14px;
+		line-height: 19px;
+	}
+
+	#downloadBox #arrow 
+	{
+		width: 160px;
+		left: 190px;
+		top: -22px;
+	}
+
+	#downloadBox #arrow img 
+	{
+		width: 100%;
+	}
+
+	#downloadBox #cta
+	{
+		right: 32px;
+		top: 36px;
+	}
+
+	#downloadBox #cta #line1 
+	{
+		font-size: 18px;
+	}
+
+	#downloadBox #cta #line2 
+	{
+		font-size: 42px;
+		line-height: 36px;
+	}
+
+
+}

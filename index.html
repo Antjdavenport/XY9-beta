@@ -1,0 +1,25 @@
+<script type="text/javascript">
+
+var lang;
+
+if (navigator.browserLanguage)
+{
+	lang = navigator.browserLanguage;
+}
+else if (navigator.language)
+{
+	lang = navigator.language;
+}
+else
+{
+	lang = "en-us";
+}
+
+if (lang != "en-us" && lang != "en-gb" && lang != "de-de" && lang != "fr-fr" && lang != "es-es" && lang != "it-it")
+{
+	lang = "en-us"
+}
+
+window.location.href = lang;
+
+</script>

@@ -1,0 +1,622 @@
+#globalChromeTop #pageName
+{
+	display: none;
+}
+
+#bgHero
+{
+	position: fixed;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	max-width: 2560px;
+	min-height: 700px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+
+#bgHero #hero
+{
+	position: absolute;
+	z-index: 0;
+	width: 100%;
+	min-width: 1000px;
+	max-width: 2560px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+@keyframes blast1Anim
+{
+	0% {opacity: 0;
+		transform: rotate(0deg); }
+	5% {opacity: 1;
+		transform: rotate(8deg); }
+	30% {opacity: 0;
+		transform: rotate(0deg); } /* finished */
+	100% {opacity: 0;
+		transform: rotate(0deg); }
+}
+
+#bgHero #blast1
+{
+	position: absolute;
+	z-index: 0;
+	opacity: 0;
+	width: 100%;
+	min-width: 1000px;
+	max-width: 2560px;
+	margin: 0 auto;
+	transform: rotate(0deg); 
+	transform-origin: 46.4% 33.4%;
+	/*animation-name: blast1Anim;*/
+	/*animation-duration:6s;*/
+	/*animation-delay: 2s;*/
+}
+
+@keyframes rock1Anim
+{
+	/*SHAKE ONLY*/
+	2% {transform: rotate(0deg); }
+	3% {transform: rotate(8deg); }
+	5% {transform: rotate(-8deg); }
+	10% {transform: rotate(6deg); }
+	30% {transform: rotate(0deg); } /* finished */
+	100% {transform: rotate(0deg); }
+}
+
+#rock1
+{
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	min-width: 1000px;
+	max-width: 2560px;
+	margin: 0 auto;
+	transform: rotate(0deg); 
+	transform-origin: 75% 19.5%;
+/*	animation-name: rock1Anim;
+	animation-duration: 6s;
+	animation-delay: 2s;*/
+}
+
+#rock2
+{
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	min-width: 1000px;
+	max-width: 2560px;
+	margin: 0 auto;
+	transform: rotate(0deg); 
+	transform-origin: 15% 45.4%;
+}
+
+@keyframes rock3Anim
+{
+	/*SHAKE ONLY*/
+	2% {transform: rotate(0deg); }
+	4% {transform: rotate(8deg); }
+	5% {transform: rotate(-10deg); }
+	12% {transform: rotate(6deg); }
+	30% {transform: rotate(0deg); } /* finished */
+	100% {transform: rotate(0deg); }
+}
+
+#rock3
+{
+	position: absolute;
+	z-index: 3;
+	width: 100%;
+	min-width: 1000px;
+	max-width: 2560px;
+	margin: 0 auto;
+	transform: rotate(0deg); 
+	transform-origin: 78.8% 42.1%;
+}
+
+#rock4
+{
+	position: absolute;
+	z-index: 4;
+	width: 100%;
+	min-width: 1000px;
+	max-width: 2560px;
+	margin: 0 auto;
+	transform: rotate(0deg); 
+	transform-origin: 65% 13%;
+}
+
+#rock5
+{
+	position: absolute;
+	z-index: 5;
+	width: 100%;
+	min-width: 1000px;
+	max-width: 2560px;
+	margin: 0 auto;
+	transform: rotate(0deg); 
+	transform-origin: 14.3% 57.9%;
+}
+
+#rock6
+{
+	position: absolute;
+	z-index: 6;
+	width: 100%;
+	min-width: 1000px;
+	max-width: 2560px;
+	margin: 0 auto;
+	transform: rotate(0deg); 
+	transform-origin: 25.3% 13.1%;
+}
+
+#beam1, #beam2, #beam3, #beam4, #beam5, #beam6{
+
+	position: absolute;
+	z-index: 6;
+	width: 100%;
+	min-width: 1000px;
+	max-width: 2560px;
+	margin: 0 auto;
+	opacity: 0;
+
+}
+
+#homeCallouts 
+{
+	position: relative;
+	margin-top: 400px;
+	opacity: 1;
+}
+
+#homeCallouts #decks 
+{
+	position: relative;
+	width: 320px;
+	margin: 0 auto;
+	background-image: url('../img/home/decks_bg.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	border: 1px solid transparent;
+}
+
+#homeCallouts #decks #flare
+{
+	position: absolute;
+	z-index: 10;
+	left: -50px;
+	top: -78px;
+	width: 300px;
+	opacity: 0;
+}
+
+#homeCallouts #decks #flare img
+{
+	width: 100%
+}
+
+#themePacksCopy 
+{
+	position: relative;
+	font-size: 16px;
+	margin-left: 22%;
+	margin-top: -1%;
+	color: #000000;
+}
+
+#burningSparkLogo,
+#nightStrikerLogo 
+{
+	position: relative;
+}
+
+#burningSparkLogo 
+{
+	left: 6.5%;
+	margin-top: 9%;
+}
+
+#nightStrikerLogo 
+{
+	left: 30%;
+}
+
+#burningSparkLogo img
+{
+	width: 63%;
+}
+#nightStrikerLogo img
+{
+	width: 59%;
+}
+
+#readMoreBtn
+{
+	position: relative;
+	left: 54%;
+	margin-top:1.8%;
+	margin-bottom: 10%;
+	color: #ffffff;
+	font-family: 'Changa One', sans-serif;
+	font-size: 15px;
+}
+
+#homeCallouts #unbox 
+{
+	position: relative;
+	width: 320px;
+	margin: 0 auto;
+	background-image: url('../img/home/unbox_bg.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	border: 1px solid transparent;
+}
+
+#homeCallouts #unbox #pyramid
+{
+	position: absolute;
+	right: -40px;
+	top: 120px;
+	z-index: 1;
+}
+#homeCallouts #unbox #pyramid img
+{
+	width: 80px;
+}
+
+
+#unboxProduct
+{
+	position: absolute;
+	width: 120px;
+	margin-left: 7%;
+	margin-top: 2%;
+	margin-right: 2%;
+}
+
+#unboxProduct img
+{
+	width: 100%;
+}
+
+#unboxCopy
+{
+	position: relative;
+	padding-top:16%;
+	padding-left: 40%; 
+	color: #000000;
+	text-align: center;
+	font-family: 'Changa One', sans-serif;
+	font-size: 16px;
+	line-height: 16px;
+}
+
+#unboxCopy .big
+{
+	font-size: 18px;
+	line-height: 17px;
+}
+
+#watchNowBtn
+{
+	padding-left: 51%;
+	padding-top: 2.5%;
+	padding-bottom: 13%;
+	color: #ffffff;
+	font-family: 'Changa One', sans-serif;
+	font-size: 15px;
+}
+
+#homeCallouts #strategy1 
+{
+	position: relative;
+	width: 320px;
+	margin: 0 auto;
+	background-image: url('../img/home/strategy_bg.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	border: 1px solid transparent;
+}
+
+#homeCallouts #strategy1 #flare
+{
+	position: absolute;
+	z-index: 10;
+	top: -64px;
+	left: 10px;
+	width: 300px;
+	opacity: 0;
+
+}
+
+#homeCallouts #strategy1 #flare img
+{
+	width: 90%
+}
+
+#strategyCards
+{
+	position: absolute;
+	width: 170px;
+	margin-left: -6%;
+	margin-top: 2%;
+	margin-right: 2%;
+}
+
+#strategyCards img
+{
+	width: 100%;
+}
+
+
+#strategyCopy
+{
+	position: relative;
+	padding-top:10%;
+	padding-left: 35%; 
+	color: #000000;
+	text-align: center;
+	font-family: 'Changa One', sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+#strategyCopy .big
+{
+	font-size: 40px;
+}
+
+#readNowBtn
+{
+	padding-left: 51%;
+	padding-top: 4%;
+	padding-bottom: 13%;
+	color: #ffffff;
+	font-family: 'Changa One', sans-serif;
+	font-size: 15px;
+}
+
+
+
+
+
+@media screen and (min-width: 500px){
+	#homeCallouts #decks
+	{
+		width: 450px;
+	}
+	#homeCallouts #decks #flare
+	{
+		left: -90px;
+		top: -140px;
+		width: auto;
+	}
+
+	#burningSparkLogo 
+	{
+		left: 8%;
+		margin-top: 8%;
+	}
+
+	#burningSparkLogo img
+	{
+		width: 67%;
+	}
+
+	#themePacksCopy
+	{
+		font-size: 24px;
+		margin-left: 23%;
+		margin-top: -1%;
+	}
+
+	#nightStrikerLogo 
+	{
+		left: 29%;
+	}
+
+	#nightStrikerLogo img
+	{
+		width: 64%;
+	}
+
+	#readMoreBtn
+	{
+		left: 54%;
+		margin-top:.8%;
+		margin-bottom: 10%;
+		font-size: 20px;
+	}
+
+	#homeCallouts #unbox
+	{
+		width: 410px;
+	}
+
+	#unboxProduct
+	{	
+		width: 150px;
+		margin-left: 6%;
+		margin-top: 2%;
+		margin-right: 2%;
+	}
+	#unboxCopy
+	{
+		padding-left: 35%; 
+		font-size: 20px;
+		line-height: 20px;
+	}
+
+	#unboxCopy .big
+	{
+		font-size: 26px;
+		line-height: 25px;
+	}
+
+	#watchNowBtn
+	{
+		padding-left: 51%;
+		padding-top: 1.5%;
+		padding-bottom: 13%;
+		font-size: 20px;
+	}
+
+	#homeCallouts #strategy1
+	{
+		width: 350px;
+	}
+
+	#strategyCards
+	{
+		width: 170px;
+		margin-left: -8%;
+	}
+
+	#strategyCopy
+	{
+		padding-left: 24%; 
+		font-size: 24px;
+		line-height: 27px;
+	}
+
+	#strategyCopy .big
+	{
+		font-size: 42px;
+	}
+
+	#readNowBtn
+	{
+		padding-top: 3%;
+		font-size: 20px;
+	}
+
+}
+
+@media screen and (min-width: 800px){
+	#homeCallouts
+	{
+		height: 450px;
+		margin-top: 320px;
+	}
+	#homeCallouts #decks,
+	#homeCallouts #unbox,
+	#homeCallouts #strategy1
+	{
+		position: absolute;	
+	}
+
+	#decks 
+	{
+
+
+	}
+
+	#homeCallouts #decks
+	{
+		right: 0px;
+	}
+	#homeCallouts #unbox
+	{
+		right: 110px;
+		top: 190px;
+	}
+	#homeCallouts #strategy1
+	{
+		right: 489px;
+		top: 265px;
+		width: 320px;
+	}
+
+	#strategyCards
+	{
+		position: absolute;
+		width: 170px;
+		margin-left: -6%;
+		margin-top: 2%;
+		margin-right: 2%;
+	}
+	#strategyCopy
+	{
+		position: relative;
+		padding-top:10%;
+		padding-left: 35%; 
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	#strategyCopy .big
+	{
+		font-size: 40px;
+	}
+
+	#readNowBtn
+	{
+		padding-left: 51%;
+		padding-top: 4%;
+		padding-bottom: 13%;
+		font-size: 15px;
+	}
+}
+
+@media screen and (min-width: 900px){
+	#homeCallouts
+	{
+		height: 450px;
+	}
+	#homeCallouts #decks,
+	#homeCallouts #unbox,
+	#homeCallouts #strategy2
+	{
+		position: absolute;	
+	}
+
+	#homeCallouts #decks {
+
+	width: 450px;
+
+	}
+
+	#homeCallouts 
+	{
+		right: 40px;
+	}
+	#homeCallouts #unbox
+	{
+		right: 150px;
+		top: 190px;
+	}
+	#homeCallouts #strategy1
+	{
+		right: 529px;
+		top: 265px;
+		width: 350px;
+	}
+
+	#strategyCards
+	{
+		width: 170px;
+		margin-left: -8%;
+	}
+
+	#strategyCopy
+	{
+		padding-left: 24%; 
+		font-size: 24px;
+		line-height: 27px;
+	}
+
+	#strategyCopy .big
+	{
+		font-size: 42px;
+	}
+
+	#readNowBtn
+	{
+		padding-top: 3%;
+		font-size: 20px;
+	}
+}

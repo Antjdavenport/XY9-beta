@@ -1,0 +1,754 @@
+#bgHero
+{
+	position: fixed;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	max-width: 2000px;
+	min-height: 700px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+
+#bgHero #hero
+{
+	position: absolute;
+	z-index: 0;
+	width: 100%;
+	min-width: 1000px;
+	max-width: 2000px;
+	margin: 0 auto;
+	margin-left: -360px;
+}
+
+#content 
+{
+	padding-top: 450px;
+}
+
+#playerModal
+{
+	display: none;
+	background-color: rgba(0, 0, 0, .8);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 200;
+	padding-top:100px;
+}
+
+#playerModal #videoBox #playerFrame #closeBtn
+{
+	position: absolute;
+	right: -30px;
+	color: #ffffff;
+	font-size: 25px;
+	top: 0px;
+	font-family: "Changa One", sans-serif;
+	cursor: pointer;
+}
+
+#videoBox #playerFrame
+{
+	position: relative;
+	margin: 0 auto;
+	margin-top: 100px;
+	width: 300px;
+	height: 190px;
+	padding: 30px 10px;
+	box-shadow: none;
+	border: none;
+	background-image: url("../img/strategy/player_frame.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#videoBox .vidPlayer
+{
+	width: 100%;
+	height: 100%;
+}
+
+
+#introBox,
+#gyradosIntroBox
+{
+	position: relative;
+	width: 320px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+#introBox #top #flare,
+#gyradosIntroBox #top #flare
+{
+	position: absolute;
+	z-index: 10;
+	top: -56px;
+	left: 30px;
+	opacity: 0;
+}
+
+#introBox #top #flare img,
+#gyradosIntroBox #top #flare img
+{
+	width: 90%
+}
+
+#introBox #top #frame,
+#gyradosIntroBox #top #frame
+{
+	display: block;
+	position: relative;
+	z-index: 1;
+	width: 100%;
+}
+
+#introBox #header,
+#gyradosIntroBox #header
+{
+	position: absolute;
+	z-index: 10;
+	top: 30px;
+	left: 5px;
+	width: 100%;
+	z-index: 10;
+	text-align: center;
+	font-family: "Alegreya Sans", sans-serif;
+	font-size: 19px;
+	line-height: 16px;
+	color: #ffffff;
+}
+
+#gyradosIntroBox #header
+{
+	top: 30px;
+}
+
+#introBox #header .smaller,
+#gyradosIntroBox #header .smaller
+{
+	font-size: 14px;
+	line-height: 16px;
+}
+
+#introBox #blinky,
+#gyradosIntroBox #blinky 
+{
+	position: absolute;
+	width: 28px;
+	top: 22px;
+	left: 19px;
+	z-index: 15;
+}
+
+#introBox #blinky img,
+#gyradosIntroBox #blinky img 
+{
+	width: 100%;
+}
+
+#introBox #top #arm,
+#introBox #top #gear1,
+#introBox #top #gear2,
+#gyradosIntroBox #top #arm, 
+#gyradosIntroBox #top #gear1,
+#gyradosIntroBox #top #gear2 
+{
+	display: none;
+}
+
+#introBox #copy,
+#gyradosIntroBox #copy 
+{
+	position: relative;
+	z-index: 5;
+	margin-left: 19px;
+	color: #ffffff;
+	padding: 0px 20px;
+	box-shadow: 1px 1px 10px #f0cee2, -1px -1px 10px #f0cee2, 1px -1px 10px #f0cee2, -1px 1px 10px #f0cee2;
+	border: 2px solid #f0cee2;
+	background-image: url("../img/global/line_bg3.png");
+	background-repeat: repeat;
+	background-size: 3px 7px;
+}
+
+#introBox #copy,
+#gyradosIntroBox #copy
+{
+	overflow: hidden;
+	/*background-image: none;*/
+	/*background-color: rgba(165, 91, 235, .8);*/
+}
+
+#introBox #copy #lines,
+#gyradosIntroBox #copy #lines
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background-image: url("../img/global/lines.png");
+	background-repeat: repeat-x;
+}
+
+#introBox #pyramid
+{
+	position: absolute;
+	top: 100px;
+	right: -45px;
+	z-index: 0;
+}
+#introBox #pyramid img 
+{
+	width: 70px;
+}
+
+#introBox #copy #playBtn
+{
+	position: relative;
+	margin-left: 55px;
+	margin-top: -60px;
+	margin-bottom: -60px;
+	width: 150px;
+	cursor: pointer;
+}
+
+#gyradosIntroBox #top #frameExtension
+{
+	display: none;
+}
+
+#gyradosIntroBox #copy
+{
+	padding-bottom: 40px;
+}
+
+#sideProjector
+{
+	position: relative;
+	z-index: 10;
+	left: 0;
+	height: 20px;
+	top: -50px;
+}
+
+#sideProjector img 
+{
+	width: 150px;
+}
+
+#boxSet
+{
+	max-width: 400px;
+	margin: 0 auto;
+}
+#boxSet img 
+{
+	width: 100%;
+}
+
+
+#trainerBox
+{
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+
+#trainerBox #platter
+{
+	display: block;
+	position: absolute;
+	z-index: 0;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+
+#platter2Container #platter2
+{
+	display: none;
+}
+
+#trainerBox #boxImage
+{
+	position: relative;
+	width: 100%;
+	max-width: 400px;
+	margin-bottom: 15%;
+}
+
+#listBox,
+#gyradosListBox
+{
+	width: 320px;
+	margin: 0 auto;
+}
+
+#listBox #top #frame,
+#listBox #bottom #frame,
+#gyradosListBox #top #frame,
+#gyradosListBox #bottom #frame
+{
+	display: block;
+	width: 100%;
+}
+
+#listBox #top #arm,
+#listBox #top #gear1,
+#listBox #top #gear2,
+#gyradosListBox #top #arm
+{
+	display: none;
+}
+
+#listBox #copy,
+#gyradosListBox #copy
+{
+	padding: 0% 8%;
+	font-size: 16px;
+	font-family: "Alegreya Sans", sans-serif;
+	background-image: url("../img/global/textFrame7_mid.png");
+	background-repeat: repeat-y;
+	background-size: 100%;
+}
+
+#listBox #copy #large,
+#gyradosListBox #copy #large
+{
+	font-size: 22px;
+}
+
+#gyradosListBox 
+{
+	position: relative;
+}
+
+#gyradosListBox #top #gear1
+{
+	display: none;
+}
+
+#gyradosListBox #pyramid
+{
+	position: absolute;
+	top: 300px;
+	left: -30px;
+	z-index: 2;
+}
+#gyradosListBox #pyramid img 
+{
+	width: 50px;
+}
+
+
+
+#leaf, #leaf2, #leaf3, #leaf4, #leaf5, #leaf6, #leaf7, #leaf8, #leaf9
+{
+	top: 80%;
+	left: -25%;
+	position: absolute;
+	z-index: 1;
+	margin-left: 0 auto;
+}
+
+
+
+#leaf2
+{
+	top: 20%;
+	
+
+}
+
+#leaf3
+{
+	top: 40%;
+
+}
+
+#leaf4
+{
+	top: 10%;
+
+}
+
+#leaf5
+{
+	top: 20%;
+
+}
+
+
+#leaf6
+{
+	top: 10%;
+	
+
+
+}
+
+
+#leaf7
+{
+	top: 70%;
+	
+
+}
+
+
+#leaf8
+{
+	top: 20%;
+
+}
+
+#leaf9
+{
+	top: 55%;
+	
+
+}
+
+#swipe1 
+
+{
+	position: absolute;
+	left: 0%;
+	width: 100%;
+	min-width: 1000px;
+	max-width: 2096px;
+	margin-left: -320px;
+	opacity: 0;
+
+}
+
+#swipe2
+
+{
+	position: absolute;
+	left: 0%;
+	width: 100%;
+	min-width: 1000px;
+	max-width: 2096px;
+	margin-left: -320px;
+	opacity: 0;
+
+}
+
+#sparkle
+
+{
+	position: absolute;
+	left: 0%;
+	width: 100%;
+	min-width: 1000px;
+	max-width: 2096px;
+	margin-left: -350px;
+	opacity: 0;
+
+}
+
+
+
+@media screen and (min-width: 600px) {
+	#bgHero #hero
+	{
+		margin-left: -200px;
+	}
+
+	#videoBox #playerFrame
+	{
+		width: 600px;
+		height: 380px;
+		padding: 40px 30px;
+	}
+
+	#swipe1, #swipe2, #sparkle
+
+	{
+
+	margin-left: -190px;
+
+
+}
+
+
+
+@media screen and (min-width: 700px) {
+	#bgHero #hero
+
+
+	{
+		margin-left: -100px;
+	}
+
+	#swipe1, #swipe2, #sparkle
+
+	{
+	
+	margin-left: -100px;
+
+
+	}
+
+	#trainerBoxContainer
+	{
+		position: relative;
+		width: 100%;
+		max-width: 720px;
+		margin: 0 auto;
+	}
+
+	#introBox 
+	{
+		width: 360px;
+		margin-left: 0;
+	}
+
+	#introBox #header
+	{
+		top: 36px;
+	}
+
+	#introBox #top #arm
+	{
+		display: block;
+		position: absolute;
+		z-index: 0;
+		left: -600px;
+		top: 50px;
+		width: 620px;
+	}
+
+	#introBox #top #gear1,
+	#gyradosIntroBox #top #gear1
+	{
+		display: block;
+		width: 30px;
+		top: 230px;
+		left: -148px;
+	}
+
+	#introBox #top #gear2,
+	#gyradosIntroBox #top #gear2
+	{
+		display: block;
+		width: 22px;
+		top: 287px;
+		left: -144px;
+	}
+
+	#introBox #top #flare
+	{
+		top: -65px;
+	}
+
+	#introBox #top #blinky
+	{
+		left: 24px;
+		top: 28px;
+	}
+
+	#introBox #copy p 
+	{
+		width: 210px;
+	}
+
+	#introBox #copy #playBtn
+	{
+		float: right;
+		margin-top: -150px;
+		right: -55px;
+	}
+
+	#trainerBox 
+	{
+		z-index: 10;
+		margin-top: 60px;
+	}
+
+	#trainerBox #platter 
+	{
+		display: none;
+	}
+
+	#platter2Container
+	{
+		display: block;
+		position: absolute;
+		left: -630px;
+		top: 40px;
+	}
+
+	#platter2Container #platter2
+	{
+		display: block;
+		width: 2000px;
+		left: -630px;
+	}
+
+	#listBox 
+	{
+		position: absolute;
+		right: 0;
+		top: 0px;
+	}
+
+	#listBox #copy
+	{
+		position: relative;
+	}
+
+	#listBox #top #arm
+	{
+		display: block;
+		position: absolute;
+		z-index: 0;
+		right: -1120px;
+		top: 50px;
+		width: 1150px;
+	}
+
+	#listBox #top #gear1 
+	{
+		display: block;
+		width: 16px;
+		left: 345px;
+		top: 103px;
+	}
+
+	#listBox #top #gear2
+	{
+		display: block;
+		width: 26px;
+		left: 427px;
+		top: 220px;
+	}
+
+	#listBox #copy .centered
+	{
+		text-align: right;
+		margin-right: 25px;
+	}
+
+	/* -------------------------------- */
+	/* -------------------------------- */
+	/* GYRADOS COLLECTION */
+
+	#gyradosBoxContainer
+	{
+		position: relative;
+		width: 100%;
+		max-width: 720px;
+		margin: 0 auto;
+	}
+
+	#gyradosIntroBox
+	{
+		margin-left: 0;
+	}
+
+	#gyradosIntroBox #top #arm
+	{
+		display: block;
+		position: absolute;
+		z-index: 0;
+		left: -600px;
+		top: 50px;
+		width: 620px;
+	}
+
+	#gyradosIntroBox #top #frameExtension
+	{
+		display: block;
+		position: absolute;
+		width: 200px;
+		z-index: 15;
+		left: 300px;
+		top: 60px;
+	}
+
+	#gyradosIntroBox #copy
+	{
+		width: 500px;
+		padding-bottom: 0;
+	}
+
+	#sideProjector
+	{
+		display: none;
+	}
+
+	#boxSet
+	{
+		margin-left: 20px;
+		width: 350px;
+		margin-bottom: 50px;
+	}
+
+	#gyradosListBox
+	{
+		z-index: 5;
+		position: absolute;
+		right: 0;
+		top: 200px;
+	}
+
+	#gyradosListBox #top #arm
+	{
+		display: block;
+		position: absolute;
+		z-index: 0;
+		right: -1120px;
+		top: 50px;
+		width: 1150px;
+	}
+
+	#gyradosListBox #top #gear1 
+	{
+		display: block;
+		width: 16px;
+		left: 345px;
+		top: 103px;
+	}
+
+	#gyradosListBox #copy
+	{
+		position: relative;
+	}
+
+	#gyradosListBox .centered
+	{
+		text-align: right;
+		margin-right: 30px;
+	}
+	/* -------------------------------- */
+}
+
+
+
+@media screen and (min-width: 800px) {
+
+	#bgHero #hero
+	{
+		margin-left: 0;
+	}
+
+	#videoBox #playerFrame
+	{
+		width: 800px;
+		height: 507px;
+		padding: 50px 40px;
+	}
+
+	#swipe1, #swipe2, #sparkle
+
+	{
+	margin: 0 auto;
+	margin-left: 0px;
+}
