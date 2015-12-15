@@ -78,36 +78,6 @@
 
 
 		
-
-<script type="text/javascript">
-	
-var rock1 = $('NewRock1');
-var rock2 = $('NewRock2');
-var rock3 = $('NewRock3');
-var rock4 = $('NewRock4');
-var rock5 = $('NewRock5');
-
-
-
-var rockTimeline = new TimelineMax({delay: 2, repeat: 100, repeatDelay:1.2});
-
-
-	rockTimeline.to(NewRock1, 0.05, {css: {opacity: 1}});
-	rockTimeline.to(NewRock1, 0.7, {top:"-60%"});
-	rockTimeline.to(NewRock2, 0.05, {css: {opacity: 1}});
-	rockTimeline.to(NewRock2, 0.7, {top:"-60%"});
-	rockTimeline.to(NewRock3, 0.05, {css: {opacity: 1}}, "+=1");
-	rockTimeline.to(NewRock3, 0.7, {top:"-60%"});
-	rockTimeline.to(NewRock4, 0.05, {css: {opacity: 1}});
-	rockTimeline.to(NewRock4, 0.7, {top:"-60%"});
-	rockTimeline.to(NewRock5, 0.05, {css: {opacity: 1}});
-	rockTimeline.to(NewRock5, 0.7, {top:"-60%"}, "-=1.2");
-	
-
-
-
-</script>
-
 		</div>
 
 		<div id="machines">

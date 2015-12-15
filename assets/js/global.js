@@ -357,6 +357,7 @@ function getRandomRange(min, max)
 
 $(window).scroll(function() {
 if (!checkBelowViewBottom($("#globalFooterContent")) && !checkAboveViewTop($("#globalFooterContent"))){
+console.log("YOU CAN SEE ME")
 $("#globalChromeBottom").css({"opacity" : "0"});
 $("#globalChromeBottomSticky").css({"opacity" : "1"});
 
@@ -402,5 +403,79 @@ return true;
 }
 }
 
+
+
+
+
  	});
+
+/*
+This sets the top nav to fixed when scrolled up
+ */
+
+
+$(window).scroll(function (e) {
+
+       if ($(window).scrollTop() > 62) {
+
+
+	$("#globalChromeTop").css({"position" : "fixed", "top" : "0"});
+
+
+
+
+}
+
+	else if ($(window).scrollTop() < 64) {
+
+		$("#globalChromeTop").css({"position" : "absolute", "top" : "62px"});
+
+
+       }
+     
+        });
+
+
+
+$(window).scroll(function (e) {
+
+	 if ($(window).scrollTop() > 120) {
+
+
+if ($("#globalNav").hasClass("open"))
+	{
+		// CLOSE THE NAV
+		$("#globalNav").removeClass("open");
+		// SWAP THE BUTTON TO INACTIVE
+		$("#globalNav #btn #menu").attr("src", "../assets/img/global/nav_off.png");
+		// ANIMATE ITEMS
+		for (i = $("#globalNav #items .globalNavItem").length; i > -1; i--)
+		{
+			$("#globalNav #items .globalNavItem:eq(" + i + ")").delay(i*5).animate({"opacity": 0, "margin-top":"15px"}, 250);
+		}
+		// ANIMATE BG
+		$("#globalNav #items #pinkBG").animate({"opacity":0}, 300, function(){ $("#globalNav #items").css({"display": "none"}); });
+
+		$("#globalNavBeam").css({"opacity": 0});
+
+		navSprite.playSprite("close"); }
+
+}
+         });
+/*
+
+/*
+
+$(window).scroll(function (e) {
+        $navTop = $('#globalChromeTop');
+        if ($(this).scrollTop() == 0) {
+            $('#globalChromeTop').css({ 'position': 'absolute', 'top': '0'});
+            console.log("make fixed");
+        }
+        if ($(this).scrollTop() < 0) {
+            $('#globalChromeTop').css({ 'position': 'absolute'});
+            console.log("make relative");
+        }
+    }); */
+
  

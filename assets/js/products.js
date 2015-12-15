@@ -17,6 +17,20 @@ $(document).ready(function()
 		flare($("#gyradosIntroBox #top #flare"));
 	}, getRandomRange(5000, 7000));
 
+	var arm1 = $('#introBox');
+	var arm2 = $('#listBox');
+	var arms = new TimelineMax({delay: 1});
+
+	arms.from(arm1, 1, {scale: 2.3, opacity: 0, left: "-80%", ease: Power3.easeInOut, y: 0 });
+	arms.from(arm2, 1, {scale: 2.3, opacity: 0, left: "100%", ease: Power3.easeInOut, y: 0 }, "-=0.7");  
+	
+
+
+
+
+
+
+
 });
 
 function animateCopyLines()
@@ -47,3 +61,4 @@ function onVideoCloseClick()
 {
 	$("#playerModal").css("display", "none");
 }
+

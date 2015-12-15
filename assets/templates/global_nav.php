@@ -22,7 +22,7 @@ echo '<div id="globalNavContainer">
 			<div id="blinkyLeft"></div>
 			<div id="pageName">' . $curPageDisplayName . '</div>
 			<div id="globalLogo">
-				<a href="index.php"><img src="../assets/img/global/logo.png" alt=' . $siteName . ' /></a>
+				<a href="index.php"><img src="../assets/img/global/breakpoint.png" alt=' . $siteName . ' /></a>
 			</div>
 		</div>
 

@@ -61,11 +61,11 @@
 			<img id="leaf8" src="../assets/img/new/leaf2.png" height="70px" width="70px">
 			<img id="leaf9" src="../assets/img/new/leaf1.png" height="100px" width="100px">
 
-			<img id="magic5" src="../assets/img/new/magic5.png" height="50%" width="50%">
-			<img id="magic4" src="../assets/img/new/magic4.png" height="80%" width="60%">
-			<img id="magic3" src="../assets/img/new/magic3.png" height="70%" width="60%">
-			<img id="magic2" src="../assets/img/new/magic1.png" height="50%" width="50%">
-			<img id="magic1" src="../assets/img/new/magic2.png" height="20%" width="30%">
+			<img id="beam5" src="../assets/img/new/beam1.png" >
+			<img id="beam4" src="../assets/img/new/beam2.png" >
+			<img id="beam3" src="../assets/img/new/beam3.png" >
+			<img id="beam2" src="../assets/img/new/beam4.png" >
+			<img id="beam1" src="../assets/img/new/beam5.png">
 
 			<img id="star1" src="../assets/img/new/star1.png">
 			<img id="star2" src="../assets/img/new/star2.png">
@@ -74,73 +74,7 @@
 			<img id="star5" src="../assets/img/new/star5.png">
 		</div>
 
-		<script type="text/javascript">
-
-		window.onload = function(){
-
-
- 
-	   	var leaf1 = $('#leaf');
-	   	var leaf2 = $('#leaf2');
-	    var leaf3 = $('#leaf3');
-	    var leaf4 = $('#leaf4');
-	    var leaf5 = $('#leaf5');
-	    var leaf6 = $('#leaf6');
-	    var leaf7 = $('#leaf7');
-	    var leaf8 = $('#leaf8');
-	    var leaf9 = $('#leaf9');
-
-	    var star1 = $('#star1');
-	    var star2 = $('#star2');
-	    var star3 = $('#star3');
-	    var star4 = $('#star4');
-	    var star5 = $('#star5');
-
-		var tl = new TimelineMax({repeat:200, repeatDelay:1.5});
-
- 		 tl.to(leaf1, 1.5, {left:"110%", top:"5%",  ease:Quint.easeInOut, rotation: 180});
- 		 tl.to(leaf2, 1.2, {left:"110%", top:"-5%",  ease:Quint.easeInOut, rotation: -180}, "-=1");
- 		 tl.to(leaf3, 1.3, {left:"110%", top:"40%",  ease:Quint.easeInOut,  rotation: 180}, "-=.7");
- 		 tl.to(leaf4, 1.7, {left:"110%", top:"5%",  ease:Quint.easeInOut,  rotation: 180}, "-=.7");
- 		 tl.to(leaf5, 1.3, {left:"110%", top:"8%",  ease: Power0.easeNone, rotation: 200}, "-=1");
- 		 tl.to(leaf6, 1.7, {left:"110%", top:"60%",  ease: Power1.easeIn,  rotation: 290}, "-=1");
- 		 tl.to(leaf7, 1.5, {left:"110%", top:"5%",  ease:Quint.easeInOut, rotation: 180}, "-=.3");
- 		 tl.to(leaf8, 1.2, {left:"110%", top:"-5%",  ease:Quint.easeInOut, rotation: -180}, "-=1");
- 		 tl.to(leaf9, 1.3, {left:"110%", top:"40%",  ease:Quint.easeInOut,  rotation: 180}, "-=.7");
-
-
- 		 	var tlstar = new TimelineMax({repeat:200, repeatDelay:0});
-			tlstar.to(star1, 0.5, {css: {opacity: 1}, ease:Quint.easeInOut});
-			tlstar.to(star1, 0.5, {css: {opacity: 0}, ease:Quint.easeInOut});
-			tlstar.to(star2, 0.5, {css: {opacity: 1}, ease:Quint.easeInOut}, "-=.8");
-			tlstar.to(star2, 0.5, {css: {opacity: 0}, ease:Quint.easeInOut});
-			tlstar.to(star3, 0.5, {css: {opacity: 1}, ease:Quint.easeInOut}, "-=.8");
-			tlstar.to(star3, 0.5, {css: {opacity: 0}, ease:Quint.easeInOut});
-			tlstar.to(star4, 0.5, {css: {opacity: 1}, ease:Quint.easeInOut}, "-=.8");
-			tlstar.to(star4, 0.5, {css: {opacity: 0}, ease:Quint.easeInOut});
-			tlstar.to(star5, 0.5, {css: {opacity: 1}, ease:Quint.easeInOut}, "-=.8");
-			tlstar.to(star5, 0.5, {css: {opacity: 0}, ease:Quint.easeInOut});
-			}
-
-			var wrap = $("#globalChromeBottom");
-
-
-
-/*
-	 $(window).scroll(function(){
-        if($(window).scrollTop() > wrap.top){
-        	console.log(wrap.scrollTop());
-              $('#globalChromeBottom').css('position','fixed').css('top','70%');
-              console.log("working");
-        } else {
-            $('#globalChromeBottom').css('position','fixed');
-            console.log("not working");
-        }    
-});
 	
-*/
-
-			</script>
 
 		<div id="machines">
 			<div id="globalNavPlate">
@@ -224,11 +158,18 @@
 						<img class="deckName" src="../assets/img/global/XY9_PCD_Logo_EN_WaveSlasher_en-us.png" alt="" />
 						<p>Cut through waves and slash foes in the battle arena&mdash;flow like water and bend like grass! Greninja and Slowking come to your call in the Wave Slasher theme deck!</p>
 						<div class="centered">
+						
 							<a href="#">
+
+						
 								<div class="greyButton">
-									Buy Now!
+								Buy Now!
+						
+									<div class="sheen"></div>
 								</div>
+								
 							</a>
+							
 						</div>
 					</div>
 					<div id="bottom">
@@ -272,6 +213,7 @@
 							<a href="#">
 								<div class="greyButton">
 									Buy Now!
+									<div class="sheen"></div>
 								</div>
 							</a>
 						</div>
@@ -320,6 +262,7 @@
 							<a href="#">
 								<div class="greyButton">
 									Buy Now!
+									<div class="sheen"></div>
 								</div>
 							</a>
 						</div>

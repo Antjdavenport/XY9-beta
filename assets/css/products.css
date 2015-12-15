@@ -25,7 +25,7 @@
 
 #content 
 {
-	padding-top: 450px;
+	padding-top: 500px;
 }
 
 #playerModal
@@ -255,7 +255,9 @@
 #trainerBox
 {
 	position: relative;
+	display: block;
 	width: 100%;
+	top: 120px;
 	text-align: center;
 }
 
@@ -488,7 +490,7 @@
 	}
 
 	#swipe1, #swipe2, #sparkle
-
+ 
 	{
 	
 	margin-left: -100px;
@@ -508,6 +510,7 @@
 	{
 		width: 360px;
 		margin-left: 0;
+		opacity: 1;
 	}
 
 	#introBox #header
@@ -582,7 +585,7 @@
 		display: block;
 		position: absolute;
 		left: -630px;
-		top: 40px;
+		top: 160px;
 	}
 
 	#platter2Container #platter2

@@ -21,6 +21,100 @@ $(document).ready(function()
 	animHoloBeams();
 
 	animateCopyLines();
+
+
+
+	var sheen = $(".sheen");
+	var sheenline = new TimelineMax({repeat: 600, delay: 3, repeatDelay: 6});
+
+
+	sheenline.to(sheen, 0.5, {opacity: 0.7, left: "30px", ease: Power2.easeIn, y: 0});
+	sheenline.to(sheen, 0.5, {opacity: 0, left: "90px"} );
+	
+
+
+	if ($(window).width() > 849) {
+
+	var arm1 = $("#introBox");
+
+	TweenMax.from(arm1, 0.8, {opacity: 0, left: "100%", scale: 2.7, delay: 0.5,  ease: Power3.easeInOut, y: 0 });
+
+}
+
+
+
+	   	var leaf1 = $('#leaf');
+	   	var leaf2 = $('#leaf2');
+	    var leaf3 = $('#leaf3');
+	    var leaf4 = $('#leaf4');
+	    var leaf5 = $('#leaf5');
+	    var leaf6 = $('#leaf6');
+	    var leaf7 = $('#leaf7');
+	    var leaf8 = $('#leaf8');
+	    var leaf9 = $('#leaf9');
+
+	    var star1 = $('#star1');
+	    var star2 = $('#star2');
+	    var star3 = $('#star3');
+	    var star4 = $('#star4');
+	    var star5 = $('#star5');
+
+
+	    var beam1 = $('#beam1');
+	    var beam2 = $('#beam2');
+	    var beam3 = $('#beam3');
+	    var beam4 = $('#beam4');
+	    var beam5 = $('#beam5');
+
+			 var tl = new TimelineMax({repeat:200, repeatDelay:1.5, delay: 4});
+
+	 		 tl.to(leaf1, 1.5, {left:"110%", top:"5%",  ease:Quint.easeInOut, rotation: 180});
+	 		 tl.to(leaf2, 1.2, {left:"110%", top:"-5%",  ease:Quint.easeInOut, rotation: -180}, "-=1");
+	 		 tl.to(leaf3, 1.3, {left:"110%", top:"40%",  ease:Quint.easeInOut,  rotation: 180}, "-=.7");
+	 		 tl.to(leaf4, 1.7, {left:"110%", top:"5%",  ease:Quint.easeInOut,  rotation: 180}, "-=.7");
+	 		 tl.to(leaf5, 1.3, {left:"110%", top:"8%",  ease: Power0.easeNone, rotation: 200}, "-=1");
+	 		 tl.to(leaf6, 1.7, {left:"110%", top:"60%",  ease: Power1.easeIn,  rotation: 290}, "-=1");
+	 		 tl.to(leaf7, 1.5, {left:"110%", top:"5%",  ease:Quint.easeInOut, rotation: 180}, "-=.3");
+	 		 tl.to(leaf8, 1.2, {left:"110%", top:"-5%",  ease:Quint.easeInOut, rotation: -180}, "-=1");
+	 		 tl.to(leaf9, 1.3, {left:"110%", top:"40%",  ease:Quint.easeInOut,  rotation: 180}, "-=.7");
+
+
+ 		 	var tlstar = new TimelineMax({repeat:200, repeatDelay:0});
+
+			tlstar.to(star1, 0.5, {css: {opacity: 1}, ease:Quint.easeInOut});
+			tlstar.to(star1, 0.5, {css: {opacity: 0}, ease:Quint.easeInOut});
+			tlstar.to(star2, 0.5, {css: {opacity: 1}, ease:Quint.easeInOut}, "-=.8");
+			tlstar.to(star2, 0.5, {css: {opacity: 0}, ease:Quint.easeInOut});
+			tlstar.to(star3, 0.5, {css: {opacity: 1}, ease:Quint.easeInOut}, "-=.8");
+			tlstar.to(star3, 0.5, {css: {opacity: 0}, ease:Quint.easeInOut});
+			tlstar.to(star4, 0.5, {css: {opacity: 1}, ease:Quint.easeInOut}, "-=.8");
+			tlstar.to(star4, 0.5, {css: {opacity: 0}, ease:Quint.easeInOut});
+			tlstar.to(star5, 0.5, {css: {opacity: 1}, ease:Quint.easeInOut}, "-=.8");
+			tlstar.to(star5, 0.5, {css: {opacity: 0}, ease:Quint.easeInOut});
+
+
+			var tlbeam = new TimelineMax({delay: 2, repeat:200, repeatDelay: 0});
+			
+			tlbeam.to(beam5, 0.2, {css: {opacity: 1}}, "-=0.2");
+			tlbeam.to(beam5, 0.2, {css: {opacity: 0}});
+			tlbeam.to(beam4, 0.2, {css: {opacity: 1}}, "-=0.2");
+			tlbeam.to(beam4, 0.2, {css: {opacity: 0}});
+			tlbeam.to(beam3, 0.2, {css: {opacity: 1}}, "-=0.2");
+			tlbeam.to(beam3, 0.2, {css: {opacity: 0}});
+			tlbeam.to(beam2, 0.2, {css: {opacity: 1}}, "-=0.2");
+			tlbeam.to(beam2, 0.2, {css: {opacity: 0}});
+			tlbeam.to(beam1, 0.2, {css: {opacity: 1}}, "-=0.2");
+			tlbeam.to(beam1, 0.2, {css: {opacity: 0}});
+
+
+
+
+			
+
+
+
+
+
 });
 
 function animateCopyLines()
