@@ -234,6 +234,13 @@ and reuses an older animation that gives them a little movement while setting th
  
  	
 
+	var sheen = $(".sheen");
+	var sheenline = new TimelineMax({repeat: 600, delay: 3, repeatDelay: 6});
+
+
+	sheenline.to(sheen, 0.3, {opacity: 0.7, left: "40px", ease: Power2.easeIn, y: 0});
+	sheenline.to(sheen, 0.3, {opacity: 0, left: "120px"} );
+
 
 });
 

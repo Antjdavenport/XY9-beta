@@ -27,6 +27,13 @@ $(document).ready(function()
 
 
 
+	var sheen = $(".sheen");
+	var sheenline = new TimelineMax({repeat: 600, delay: 3, repeatDelay: 6});
+
+
+	sheenline.to(sheen, 0.3, {opacity: 0.7, left: "30px", ease: Power2.easeIn, y: 0});
+	sheenline.to(sheen, 0.3, {opacity: 0, left: "90px"} );
+
 
 
 

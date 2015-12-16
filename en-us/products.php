@@ -219,6 +219,7 @@
 							<a href="#">
 								<div class="greyButton">
 									Buy Now!
+									<div class="sheen"></div>
 								</div>
 							</a>
 						</div>
@@ -285,7 +286,9 @@
 							<a href="#">
 								<div class="greyButton">
 									Buy Now!
+										<div class="sheen"></div>
 								</div>
+
 							</a>
 						</div>
 

@@ -50,6 +50,7 @@ echo '<div id="bgHero">
 					</div>
 					<div id="readMoreBtn">
 						' . $home_decks_readMore . '
+						<div class="sheen"></div>
 					</div>
 				</div>
 				</a>
@@ -66,6 +67,7 @@ echo '<div id="bgHero">
 					</div>
 					<div id="watchNowBtn">
 						' . $home_unbox_watch . '
+						<div class="sheen"></div>
 					</div>
 				</div>
 				</a>
@@ -82,6 +84,7 @@ echo '<div id="bgHero">
 					</div>
 					<div id="readNowBtn">
 						' . $home_strategy_watch . '
+						<div class="sheen"></div>
 					</div>
 				</div>
 				</a>
